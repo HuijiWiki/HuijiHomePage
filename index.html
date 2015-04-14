@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <title>灰机wiki</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <style>
+        *{
+            text-decoration: none;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background: #f9f9f9;
+            font-family: "Open Sans",Arial,"Hiragino Sans GB","Microsoft YaHei","微软雅黑","STHeiti","WenQuanYi Micro Hei",SimSun,sans-serif;
+        }
+        .wrapper{
+            background: #fff;
+            position: absolute;
+            left: 15%;
+            right: 15%;
+            top: 0;
+            bottom: 0;
+        }
+        .home-page-top{
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 40%;
+        }
+        .home-page-top ul{
+            position: absolute;
+            bottom: 10%;
+            left: 0;
+            right: 0;
+        }
+        .home-page-top ul li{
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .home-page-bottom{
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 60%;
+            bottom: 0;
+            border-top:1px solid #e0e0e0;
+        }
+        .home-join{
+            width: 50%;
+            float: left;
+            height: 50%;
+        }
+        .home-join:hover h3{
+            display: block;
+        }
+        .home-use{
+            float: right;
+            width: 50%;
+            height: 50%;
+        }
+        .home-use:hover h3{
+            display: block;
+        }
+        .home-join button{
+            margin-top: 50px;
+            margin-right: 40px;
+            float: right;
+        }
+        .home-join h3{
+            margin-right: 40px;
+            margin-top: 30px;
+            float: right;
+            clear: both;
+            color: #347bff;
+
+        }
+        .home-use button{
+            margin-top: 50px;
+            margin-left: 40px;
+        }
+        .home-use h3{
+            margin-top: 30px;
+            margin-left: 40px;
+            color: #00af89;
+
+        }
+        h3{
+            font-size: 32px;
+        }
+        .interest-kind{
+            position: absolute;
+        }
+        footer{
+            position: absolute;
+            bottom: 10px;
+            left: 0;
+            right: 0;
+            text-align: center;
+            color: #999;
+            font-size: 14px;
+        }
+        footer a{
+            color: #428bca;
+            border-bottom:1px solid #e0e0e0;
+        }
+        footer a:hover{
+            border-bottom: 1px solid #428bca;
+        }
+        @media screen and (min-width: 979px) and (max-width: 1200px){
+            h3{
+                font-size: 24px;
+            }
+        }
+        @media screen and (max-width: 978px){
+            h3{
+                font-size: 18px;
+            }
+            .home-page-top img{
+                height: 30px;
+            }
+            .home-logo img{
+                height: 50px;
+            }
+            .mw-ui-button.mw-ui-big{
+                font-size: 1em;
+            }
+        }
+        @media screen and (min-width: 320px) and (max-width: 667px){
+            .wrapper{
+                left: 0;
+                right: 0;
+            }
+            .home-join{
+                width: 100%;
+                text-align: center;
+
+                height: auto;
+            }
+            .home-join h3,.home-join button{
+                float: none;
+                margin-right: auto;
+                margin-top: 20px;
+            }
+            .home-use{
+                width: 100%;
+                text-align: center;
+
+                height: auto;
+            }
+            .home-use h3,.home-use button{
+                margin-top: 20px;
+                margin-left: auto;
+            }
+            .home-join h3,.home-use h3{
+                display: block;
+            }
+        }
+        @media screen and (min-height:480px) and (max-height: 667px){
+            .home-page-top{
+                bottom: 50%;
+            }
+            .home-page-bottom{
+                top: 50%;
+            }
+            .home-page-top ul{
+                bottom: 5%;
+            }
+            footer{
+                font-size: 12px;
+            }
+        }
+        @media screen and (max-height:469px){
+            .wrapper,.home-page-top,.home-page-top ul,.home-page-bottom{
+                position: relative;
+            }
+            .home-page-top{
+                padding-top: 20px;
+            }
+            .home-page-bottom{
+               padding-bottom: 20px;
+            }
+            .home-use,.home-join{
+                float: none;
+            }
+            footer{
+                margin-bottom: -10px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <div class="home-page-top">
+        <ul>
+            <li class="home-logo"><img src="/images/huiji_logo.png"></li>
+            <li><img src="/images/description_1.jpg"></li>
+            <li><img src="/images/description_2.png"></li>
+        </ul>
+    </div>
+    <div class="home-page-bottom">
+        <div class="home-join">
+            <button class="mw-ui-button mw-ui-progressive mw-ui-big"><a href="huiji.wiki/index.php?title=特殊:用户登录&type=signup">注册用户</a></button>
+            <h3>你的兴趣 在此起飞</h3>
+            <div class="interest-kind"></div>
+        </div>
+        <div class="home-use">
+            <button class="mw-ui-button mw-ui-constructive mw-ui-big"><a>创建站点</a></button>
+            <h3>有多热爱 就飞多高</h3>
+        </div>
+    </div>
+    <footer>
+        <p>Powered by <a href="http://mediawiki.org">MediaWiki</a> <a href="http://www.miitbeian.gov.cn/">京ICP备15015138号</a></p>
+    </footer>
+</div>
+</body>
+</html>
